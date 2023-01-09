@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="color">
+  <script>
+    const colorTag = document.querySelector("input")
+    // colorTag.addEventListener('input', (event) => {
+    //   // you can only store strings in localstorage
+    //   console.log(event.target.value);
+    //   localStorage.setItem("favourite-color", this.value)
+    // })
+    colorTag.addEventListener('input', function(event) {
+      // you can only store strings in localstorage
+      console.log(event.target.value);
+      localStorage.setItem("favourite-color", this.value)// this.value will not work in arrow functions
+      // localStorage.getItem("favourite-color")
+      document.body.style.backgroundColor = this.value
+      // if you have more complicated examples, then you can store it in JSON.stringify({object})
+      // sessionStorage.getItem()
+      // sessionStorage.setItem()
+      // clear function to clear the localstorage
+    })
+  </script>
+</body>
+</html>
