@@ -1,0 +1,2 @@
+def checkValue():
+  print('hi')
