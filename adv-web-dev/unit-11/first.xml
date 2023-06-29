@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+
+<mail>
+  <to>John</to>
+  <from>Smith</from>
+  <heading>Invitation Email</heading>
+  <body>Inviting you to a birthday party</body>
+  <Semester>
+    <title>Hello Everyone!</title>
+    
+  </Semester>
+</mail>

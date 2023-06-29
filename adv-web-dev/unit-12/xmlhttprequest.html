@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xmlHttpRequest</title>
+</head>
+<body>
+  <p id="data"></p>
+  <script>
+    var myxmlFunc = (res) => {
+      const xmlNode = res.responseXML;
+      document.querySelector("#data").innerHTML = 
+      xmlNode.getElementsByTagName("FirstName")[0].childNodes[0].nodeValue;
+      console.log(xmlNode, "hello")
+    }
+
+    const xhttp = new XMLHttpRequest()
+    xhttp.onreadystatechange = function(res) {
+      if(res.readyState == 4 && res.status == 200){
+        myxmlFunc(this)
+      }
+    }
+    xhttp.open("GET", "xml.xml", true)
+    xhttp.send();
+  </script>
+</body>
+</html>
