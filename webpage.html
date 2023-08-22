@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring Flowers High School</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+    header {
+      max-height: 100px;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+
+    .school-name {
+      display: flex;
+      background: linear-gradient(90deg, rgba(38, 34, 96, 1) 0%, rgba(30, 177, 235, 1) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+    }
+
+    * {
+      font-family: 'mONTSERRAT';
+    }
+
+    .border-bottom {
+      height: 7px;
+      background: rgb(38, 34, 96);
+      background: linear-gradient(90deg, rgba(38, 34, 96, 1) 0%, rgba(30, 177, 235, 1) 100%);
+      border: 0px;
+    }
+
+    img {
+      box-sizing: border-box;
+      object-fit: cover;
+      overflow-y: hidden;
+    }
+
+    li a,
+    li button,
+    .dropdown-item {
+      font-weight: 600 !important;
+      font-size: larger !important;
+    }
+
+    .text,
+    p {
+      font-size: 1em;
+    }
+
+    @media(min-width: 500px) {
+      .outerContainer {
+        max-width: 500px;
+      }
+
+      .text,
+      p {
+        font-size: 1.2em;
+      }
+    }
+
+    @media(min-width: 768px) {
+      #carouselExample img {
+        max-height: 500px;
+      }
+
+      .text,
+      p {
+        font-size: 1.5em;
+      }
+    }
+
+    table {
+      max-width: max-content;
+      margin: auto;
+    }
+
+    .container {
+      max-width: fit-content;
+      margin: auto;
+      margin-top: 50px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .outerContainer {
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 40px auto;
+      background: linear-gradient(90deg, rgba(38, 34, 96, 1) 0%, rgba(30, 177, 235, 1) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+
+    h2 {
+      margin: 40px auto;
+      background: linear-gradient(90deg, rgba(38, 34, 96, 1) 0%, rgba(30, 177, 235, 1) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+
+    footer {
+      padding: 1em;
+      background: linear-gradient(90deg, rgba(38, 34, 96, 1) 0%, rgba(30, 177, 235, 1) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar navbar-expand-xl navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="homepage.html">
+        <div class="d-flex">
+          <img src="https://i.ibb.co/Xkm2hxW/jain.jpg" alt="logo" class="">
+          <span class="align-items-center school-name h1 d-none d-sm-flex">Jain College</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="border-bottom"></div>
+  <main>
+    <center>
+      <img src="https://i.ibb.co/qRPRNhQ/school1.jpg" class="" alt="...">
+      <div class="container-fluid d-md-flex p-md-5 justify-content-center mt-3">
+        <img src="https://i.ibb.co/JdvBZfP/school4.jpg" alt="picture" class="h-auto w-100 w-md-75 m-0 object-fit-cover">
+
+        <div class="container-fluid w-md-75 ms-md-5">
+          <h1 class="mb-3 mt-3">About Us</h1>
+          <p class="text text-start">
+            As one of the finest institutions in the country, JAIN (Deemed-to-be University) creates an exceptional space for an enhanced learning experience. The vibrant culture of the University has embraced innovation, and its entrepreneurial perspective encourages students, staff and faculty to challenge convention, lead discovery and explore new ways of learning.
+            Empowering communities through Education:
+            We
+            believe
+            education is a fundamental right that should be accessible to all individuals regardless of their
+            background.
+            We
+            are committed to providing quality education,
+            increasing
+            access to educational resources, and fostering a love of learning in the communities we serve. Our programs
+            and
+            initiatives are designed to inspire, educate, and transform lives.
+
+          </p>
+          <p class="text text-start">
+            Make a significant impact with your small donation by sponsoring a child today! Become a part of a brighter
+            future and torchbearer to fight for a common goal for our vulnerable children as you join our efforts today.
+          </p>
+        </div>
+      </div>
+      <div class="container-lg extra-activity-container">
+
+      </div>
+    </center>
+  </main>
+  <footer>
+    <center>© 2023 Jain College</center>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
